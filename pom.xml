@@ -48,7 +48,7 @@
                         <tasks>
                            <!-- <delete dir="src/main/webapp/WEB-INF/lib" />-->
                             <copy todir="/home/testpckg/">
-                                <fileset dir="/home/testpckg/">
+                                <fileset dir="${project.commonmodule.lib-source.directory}">
                                     <include name="*" />
                                 </fileset>
                             </copy>
