@@ -30,7 +30,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+    <!-- 测试生成jar包路径
     <build>
         <plugins>
             <plugin>
@@ -46,7 +46,7 @@
                     <phase>package</phase>
                     <configuration>
                         <tasks>
-                           <!-- <delete dir="src/main/webapp/WEB-INF/lib" />-->
+                           <delete dir="src/main/webapp/WEB-INF/lib" />
                             <copy todir="/home/testpckg/">
                                 <fileset dir="${project.commonmodule.lib-source.directory}">
                                     <include name="*" />
@@ -60,7 +60,7 @@
                 </execution>
             </executions>
         </plugin>
-
+    -->
         </plugins>
     </build>
 
